@@ -1,11 +1,14 @@
-import React, { Component } from "react"
-import '../styles/App.css'
+import React, { Component } from 'react'
+import '../styles/App.scss'
+import Header from './Header'
+import Intro from './Intro'
 
 class App extends Component {
     render() {
         return (
-            <div>
-                <h1>Fylo</h1>
+            <div className='container'>
+                <Header />
+                <Intro />
             </div>
         )
     }
