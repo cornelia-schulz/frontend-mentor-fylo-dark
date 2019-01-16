@@ -1,0 +1,55 @@
+// Colour variables
+$primaryColour: hsl(217, 28%, 15%);
+$darkBlue: hsl(218, 28%, 13%);
+$darkerBlue: hsl(218, 28%, 13%);
+$lighterDarkBlue: hsl(219, 30%, 18%);
+$accentCyan: hsl(176, 68%, 64%);
+$Blue: hsl(198, 60%, 50%);
+$neutralWhite: hsl(0, 0%, 100%);
+
+// Font variables
+$bodyFontSize: 14px;
+$bodyFont: 'Open Sans', sans-serif;
+$headerFont: 'Raleway', sans-serif;
+
+body {
+    background: $darkBlue;
+    font-family: $bodyFont;
+    font-size: $bodyFontSize;
+    color: $neutralWhite;
+}
+
+h1 {
+    font-family: $headerFont;
+    color: $neutralWhite;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: $neutralWhite;
+}
+
+nav ul li a:hover {
+    color: $accentCyan;
+}
