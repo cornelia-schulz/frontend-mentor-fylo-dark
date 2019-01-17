@@ -9,6 +9,7 @@ $neutralWhite: hsl(0, 0%, 100%);
 
 // Font variables
 $bodyFontSize: 14px;
+$header1FontSize: 40px;
 $bodyFont: 'Open Sans', sans-serif;
 $headerFont: 'Raleway', sans-serif;
 
@@ -22,6 +23,16 @@ body {
 h1 {
     font-family: $headerFont;
     color: $neutralWhite;
+    font-size: $header1FontSize;
+}
+
+button {
+    background-color: $Blue;
+    border-radius: 40px;
+
+    span {
+        // border-radius: 40px;
+    }
 }
 
 .container {
@@ -36,20 +47,39 @@ header {
 
 nav ul {
     display: flex;
+    font-family: $headerFont;
+
+    li {
+        text-decoration: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            color: $neutralWhite;
+
+            &:hover {
+                color: $accentCyan;
+            }
+        }
+    }
 }
 
-nav ul li {
-    text-decoration: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    list-style: none;
-}
+.intro {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
 
-nav ul li a {
-    text-decoration: none;
-    color: $neutralWhite;
-}
+    p {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 1.5em;
+    }
 
-nav ul li a:hover {
-    color: $accentCyan;
+    button {
+        width: 30%;
+        height: 3em;
+        color: $neutralWhite;
+    }
 }
