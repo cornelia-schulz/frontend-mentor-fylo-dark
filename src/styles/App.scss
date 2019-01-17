@@ -29,9 +29,10 @@ h1 {
 button {
     background-color: $Blue;
     border-radius: 40px;
+    border: none;
 
-    span {
-        // border-radius: 40px;
+    &:focus {
+        outline: 0;
     }
 }
 
