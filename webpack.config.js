@@ -5,6 +5,7 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.join(__dirname, "/dist"),
+    publicPath: '/',
     filename: "index_bundle.js"
   },
   module: {
@@ -27,6 +28,15 @@ module.exports = {
             loader: 'react-svg-loader'
         }
         ]
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {},
+          },
+        ],
       }
     ]
   },
